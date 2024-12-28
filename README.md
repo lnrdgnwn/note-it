@@ -62,7 +62,7 @@ To enable Firebase features like authentication, database, or storage, you'll ne
    In Firebase, go to **Firestore Database**:
    - Select **Create database**.
    - Choose **Start in production mode**.
-   - Choose start with production then set the Firestore Rules like this : 
+   - Change and Set the Firestore Rules like this : 
       ```bash
       service cloud.firestore {
          match /databases/{database}/documents {
