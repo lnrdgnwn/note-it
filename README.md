@@ -36,7 +36,7 @@ To enable Firebase features like authentication, database, or storage, you'll ne
 
    - Go to the [Firebase Console](https://console.firebase.google.com/).
    - Create a new Firebase project (or use an existing one).
-   - In the Firebase Console, go to **Project Settings** and find your Firebase configuration credentials. This typically includes:
+   - In the Firebase Console, go to **Project Settings**, then add Firebase to your web app then Copy Firebase Config that includes:
      - `apiKey`
      - `authDomain`
      - `projectId`
@@ -45,7 +45,7 @@ To enable Firebase features like authentication, database, or storage, you'll ne
      - `appId`
      - `measurementId`
    
-   - In your project folder, There is an `.env.local.example` file. Rename it to  `.env.local` file and update using your configuration credentials.
+   - In your project folder, There is an `.env.local.example` file. Rename it to  `.env.local` file and update using your Firebase Config value.
 
 4. **Run Server**
    ```bash
