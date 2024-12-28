@@ -24,7 +24,7 @@ Follow these steps to get the app running on your local machine.
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/note-it-app.git
+   git clone https://github.com/lnrdgnwn/note-it.git
    cd note-it
 
 2. **Install dependencies**
