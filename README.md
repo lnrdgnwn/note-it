@@ -45,7 +45,7 @@ To enable Firebase features like authentication, database, or storage, you'll ne
      - `appId`
      - `measurementId`
    
-   - In your project folder, There is an `.env.local.example` file. Copy it  to create a `.env.local` file and update using your configuration credentials.
+   - In your project folder, There is an `.env.local.example` file. Rename it to  `.env.local` file and update using your configuration credentials.
 
 4. **Run Server**
    ```bash
