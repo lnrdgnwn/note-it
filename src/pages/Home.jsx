@@ -14,8 +14,8 @@ function Home() {
         <About />
         <Benefit />
         <Quote />
-        <HomeFooter />
       </main>
+      <HomeFooter />
     </>
   );
 }

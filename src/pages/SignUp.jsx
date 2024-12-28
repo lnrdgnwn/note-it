@@ -1,6 +1,6 @@
-import LoginForm from "../components/LoginForm";
+import SignUpForm from "../components/SignUpForm";
 
-function Login() {
+function SignUp() {
   return (
     <>
       <header className="fixed z-50 border-b-[1px] bg-white border-b-black flex items-center justify-center top-0 left-0 right-0 p-5 w-full">
@@ -12,11 +12,11 @@ function Login() {
       </header>
       <section className="flex items-center justify-center h-screen px-[6%] lg:px-[13%]">
         <div className="flex w-full gap-20 items-center justify-center space-y-8">
-          <LoginForm />
+          <SignUpForm />
         </div>
       </section>
     </>
   );
 }
 
-export default Login;
+export default SignUp;
