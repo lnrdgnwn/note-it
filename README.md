@@ -31,7 +31,7 @@ Follow these steps to get the app running on your local machine.
    ```bash
    npm install
 
-3. **Setup Firebase**
+3. **Setup Firebase App**
 To enable Firebase features like authentication, database, or storage, you'll need to set up Firebase.
 
    - Go to the [Firebase Console](https://console.firebase.google.com/).
@@ -47,6 +47,32 @@ To enable Firebase features like authentication, database, or storage, you'll ne
    
    - In your project folder, There is an `.env.local.example` file. Rename it to  `.env.local` file and update using your Firebase Config value.
 
-4. **Run Server**
+4. **Enable Firebase Authentication**
+   
+   To authenticate users with Firebase, you need to set up authentication methods like Email/Password and Google Sign-In.
+
+   - **Enable Email/Password Authentication**:
+     1. In the **Firebase Console**, navigate to **Authentication** > **Sign-in method**.
+     2. Enable the **Email/Password** sign-in provider.
+
+   - **Enable Google Authentication**:
+     1. In the **Sign-in method** tab, enable the **Google** sign-in provider.
+
+5. **Create Firestore Database**
+   In Firebase, go to **Firestore Database**:
+   - Select **Create database**.
+   - Choose **Start in production mode**.
+   - Choose start with production then set the Firestore Rules like this : 
+      ```bash
+      service cloud.firestore {
+         match /databases/{database}/documents {
+            match /notes/{noteId} {
+            allow read, write: if request.auth != null;
+            }
+         }
+      }
+   
+
+6. **Run Server**
    ```bash
    npm run dev
