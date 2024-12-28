@@ -1,8 +1,52 @@
-# React + Vite
+# Note-It App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Note-It is a simple note-taking app built with React, allowing users to create, edit, delete, and manage their notes. It features a clean and intuitive UI that provides users with a seamless experience in organizing their notes.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Create, edit, and delete notes
+- Archive and restore notes
+- Move notes to trash and delete permanently
+- User-friendly and responsive design
+- Instant editing directly on click without extra buttons
+
+## Installation
+
+Follow these steps to get the app running on your local machine.
+
+### Prerequisites
+
+- Node.js (v14.x or later)
+- npm or yarn (package managers)
+
+### Steps to Run the App Locally
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/yourusername/note-it-app.git
+   cd note-it
+
+2. **Install dependencies**
+   ```bash
+   npm install
+
+3. **Setup Firebase**
+To enable Firebase features like authentication, database, or storage, you'll need to set up Firebase.
+
+   - Go to the [Firebase Console](https://console.firebase.google.com/).
+   - Create a new Firebase project (or use an existing one).
+   - In the Firebase Console, go to **Project Settings** and find your Firebase configuration credentials. This typically includes:
+     - `apiKey`
+     - `authDomain`
+     - `projectId`
+     - `storageBucket`
+     - `messagingSenderId`
+     - `appId`
+     - `measurementId`
+   
+   - In your project folder, There is an `.env.local.example` file. Copy it  to create a `.env.local` file and update using your configuration credentials.
+
+4. **Run Server**
+   ```bash
+   npm run dev
